@@ -1,9 +1,9 @@
 <?php
 
-namespace ApiLazada\Order;
+namespace LazadaApi\Order;
 
 
-use \ApiLazada\Request;
+use \LazadaApi\Request;
 
 /**
  * Class for load order info from Lazada

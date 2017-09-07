@@ -1,14 +1,14 @@
 <?php
 
 
-namespace ApiLazada\Product;
+namespace LazadaApi\Product;
 
-use \ApiLazada\PostRequest;
+use \LazadaApi\PostRequest;
 
 /**
  *
  * Class GetProducts
- * @package ApiLazada\Product
+ * @package LazadaApi\Product
  */
 class CreateProduct extends PostRequest
 {

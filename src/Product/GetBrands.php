@@ -7,15 +7,15 @@
  * Time: 2:43 PM
  */
 
-namespace ApiLazada\Product;
+namespace LazadaApi\Product;
 
 
-use ApiLazada\Request;
+use LazadaApi\Request;
 
 /**
  *
  * Class GetProducts
- * @package ApiLazada\Product
+ * @package LazadaApi\Product
  *
  * @property integer Limit
  * @property integer Offset

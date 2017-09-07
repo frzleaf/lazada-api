@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ApiLazada;
+namespace LazadaApi;
 
 use \DateTime;
 use SimpleXMLElement;

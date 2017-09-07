@@ -6,7 +6,7 @@
  * Time: 4:04 PM
  */
 
-namespace ApiLazada;
+namespace LazadaApi;
 
 class Exception extends \Exception
 {

@@ -1,9 +1,9 @@
 <?php
 
 
-namespace ApiLazada\Product;
+namespace LazadaApi\Product;
 
-use ApiLazada\Order\GetOrders;
+use LazadaApi\Order\GetOrders;
 
 include_once __DIR__ . '/../../vendor/autoload.php';
 
