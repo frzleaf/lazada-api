@@ -1,0 +1,19 @@
+{
+    "name": "frzleaf/api-lazada",
+    "description": "Lazada API PHP SDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "frzleaf",
+            "email": "stash.leth@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ApiLazada\\": "src"
+        }
+    }
+}
