@@ -37,7 +37,7 @@ class Request
         $this->MethodName = $reflect->getShortName();
     }
 
-    public function query($params = null)
+    public function execute($params = null)
     {
         if ($params) {
             $this->RequestParams = $params;
@@ -62,9 +62,11 @@ class Request
     {
         if (isset($data['SuccessResponse'])) {
             return $data['SuccessResponse']['Body'];
+
         } elseif (isset($data['ErrorResponse'])) {
             $head = $data['ErrorResponse']['Head'];
-            throw new Exception(sprintf("Lazada error code: %s, %s", $head['ErrorCode'], $head['ErrorMessage']));
+            $body = $data['ErrorResponse']['Body'];
+            throw new Exception(sprintf("%s: %s, %s", $head['ErrorCode'], $head['ErrorMessage'], json_encode($body)));
         }
         return null;
     }
