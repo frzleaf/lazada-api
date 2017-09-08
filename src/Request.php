@@ -119,9 +119,9 @@ class Request
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, static::API_URL . "?" . $queryString);
 
-        if($headers){
+        if ($headers) {
             $joined_headers = [];
-            foreach ($headers as $k => $v){
+            foreach ($headers as $k => $v) {
                 $joined_headers = "$k: $v";
             }
             curl_setopt($ch, CURLOPT_HEADER, $joined_headers);
@@ -212,7 +212,11 @@ class Request
 
     public function __get($name)
     {
-        if ($name && isset($this->RequestParams[$name])) {
+        if (property_exists($this, $name)) {
+            return $this->$name;
+        }
+
+        if (isset($this->RequestParams[$name])) {
             return $this->RequestParams[$name];
         }
         return null;
